@@ -67,7 +67,7 @@ export default function Header(){
                             <img src="https://th.bing.com/th/id/R.215ba40fb9ecbec4b30827894ba78cd0?rik=E9WUGcSGxVdxXQ&riu=http%3a%2f%2fwww.6dglobal.com%2fimages%2fstaff%2fbrad.barton.jpg&ehk=2Cew2qqeMYL%2fkblfAk1dA7YhWHvLTubNbKN6MmF%2foas%3d&risl=&pid=ImgRaw&r=0" alt="Profile" className='h-8 w-8 rounded-full' />
 
                             <div className='flex w-max justify-center'>
-                                <span className='text-sm'>Me</span>
+                                <span className='text-xs sm:text-sm'>Me</span>
                                 <svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.29999 10.66L14.5 5.12002C14.5136 5.10966 14.5229 5.09471 14.5262 5.07797C14.5295 5.06123 14.5266 5.04385 14.518 5.02911C14.5094 5.01437 14.4957 5.00328 14.4795 4.99792C14.4633 4.99257 14.4457 4.99331 14.43 5.00002H2.56999C2.5543 4.99331 2.5367 4.99257 2.5205 4.99792C2.50429 5.00328 2.49061 5.01437 2.48201 5.02911C2.47341 5.04385 2.47049 5.06123 2.4738 5.07797C2.47712 5.09471 2.48643 5.10966 2.49999 5.12002L7.69999 10.66C7.80282 10.769 7.92681 10.8558 8.06438 10.9151C8.20194 10.9744 8.35018 11.005 8.49999 11.005C8.64981 11.005 8.79804 10.9744 8.93561 10.9151C9.07317 10.8558 9.19717 10.769 9.29999 10.66Z" fill="#666666" fill-opacity="0.6"/>
                                 </svg>
@@ -75,7 +75,7 @@ export default function Header(){
                         </div>
                     </div>
                     <div className='flex w-full justify-center'>
-                        <div className='text-xs sm:text flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div className='flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 10H14V14H10V10ZM10 21H14V17H10V21ZM3 14H7V10H3V14ZM3 21H7V17H3V21ZM3 7H7V3H3V7ZM17 14H21V10H17V14ZM17 3V7H21V3H17ZM10 7H14V3H10V7ZM17 21H21V17H17V21Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>
