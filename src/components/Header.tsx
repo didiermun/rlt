@@ -60,11 +60,11 @@ export default function Header(){
 
 
 
-                            <span className='text-xs sm:text-sm'>Messages</span>
+                            <span className='text-xs sm:text-sm'>Notifications</span>
                         </div>
 
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
-                            <img src="https://th.bing.com/th/id/R.215ba40fb9ecbec4b30827894ba78cd0?rik=E9WUGcSGxVdxXQ&riu=http%3a%2f%2fwww.6dglobal.com%2fimages%2fstaff%2fbrad.barton.jpg&ehk=2Cew2qqeMYL%2fkblfAk1dA7YhWHvLTubNbKN6MmF%2foas%3d&risl=&pid=ImgRaw&r=0" alt="Profile" className='h-8 w-8 rounded-full' />
+                            <img src="https://th.bing.com/th/id/R.215ba40fb9ecbec4b30827894ba78cd0?rik=E9WUGcSGxVdxXQ&riu=http%3a%2f%2fwww.6dglobal.com%2fimages%2fstaff%2fbrad.barton.jpg&ehk=2Cew2qqeMYL%2fkblfAk1dA7YhWHvLTubNbKN6MmF%2foas%3d&risl=&pid=ImgRaw&r=0" alt="Profile" className='h-6 w-6 rounded-full' />
 
                             <div className='flex w-max justify-center'>
                                 <span className='text-xs sm:text-sm'>Me</span>
@@ -75,8 +75,8 @@ export default function Header(){
                         </div>
                     </div>
                     <div className='flex w-full justify-center'>
-                        <div className='flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
-                            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <div className='flex flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                            <svg width="26" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 10H14V14H10V10ZM10 21H14V17H10V21ZM3 14H7V10H3V14ZM3 21H7V17H3V21ZM3 7H7V3H3V7ZM17 14H21V10H17V14ZM17 3V7H21V3H17ZM10 7H14V3H10V7ZM17 21H21V17H17V21Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
