@@ -25,6 +25,9 @@ export default function LocationForm() {
                 </div>
               </div>
               <PostCard />
+              <PostCard />
+              <PostCard />
+              <PostCard />
             </div>
           </div>
     )
