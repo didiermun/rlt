@@ -25,14 +25,14 @@ export default function Header(){
                                 <path d="M23 9V11H21V18C21 19.7 19.7 21 18 21H14V15H10V21H6C4.3 21 3 19.7 3 18V11H1V9L12 2L23 9Z" fill="black" fill-opacity="0.9"/>
                                 <path d="M20 2H17V5.2L20 7.1V2Z" fill="black" fill-opacity="0.9"/>
                             </svg>
-                            <span className='text-sm '>Home</span>
+                            <span className='text-xs sm:text-sm'>Home</span>
                         </div>
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.5 16V22H3.5V16C3.5 14.3 4.8 13 6.5 13H9.5C11.2 13 12.5 14.3 12.5 16ZM18 13C19.9 13 21.5 11.4 21.5 9.5C21.5 7.6 19.9 6 18 6C16.1 6 14.5 7.6 14.5 9.5C14.5 11.4 16.1 13 18 13ZM19 15H17C15.6 15 14.5 16.1 14.5 17.5V22H21.5V17.5C21.5 16.1 20.4 15 19 15ZM8 2C5.5 2 3.5 4 3.5 6.5C3.5 9 5.5 11 8 11C10.5 11 12.5 9 12.5 6.5C12.5 4 10.5 2 8 2Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>
 
-                            <span className='text-sm'>My Network</span>
+                            <span className='text-xs sm:text-sm'>My Network</span>
                         </div>
 
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
@@ -41,7 +41,7 @@ export default function Header(){
                             </svg>
 
 
-                            <span className='text-sm'>Jobs</span>
+                            <span className='text-xs sm:text-sm'>Jobs</span>
                         </div>
 
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
@@ -50,7 +50,7 @@ export default function Header(){
                             </svg>
 
 
-                            <span className='text-sm'>Messages</span>
+                            <span className='text-xs sm:text-sm'>Messages</span>
                         </div>
 
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
@@ -60,7 +60,7 @@ export default function Header(){
 
 
 
-                            <span className='text-sm'>Messages</span>
+                            <span className='text-xs sm:text-sm'>Messages</span>
                         </div>
 
                         <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
@@ -75,7 +75,7 @@ export default function Header(){
                         </div>
                     </div>
                     <div className='flex w-full justify-center'>
-                        <div className='flex flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div className='text-xs sm:text flex-col w-max items-center justify-center px-2 border-black text-ground  pb-1 cursor-pointer'>
                             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10 10H14V14H10V10ZM10 21H14V17H10V21ZM3 14H7V10H3V14ZM3 21H7V17H3V21ZM3 7H7V3H3V7ZM17 14H21V10H17V14ZM17 3V7H21V3H17ZM10 7H14V3H10V7ZM17 21H21V17H17V21Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>

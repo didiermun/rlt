@@ -34,7 +34,7 @@ export default function NewPost() {
                       <path d="M18.25 0V2H0.25V0H18.25ZM12.25 6H18.25V4H12.25V6ZM12.25 10H18.25V8H12.25V10ZM12.25 14H18.25V12H12.25V14ZM0.25 18H18.25V16H0.25V18ZM10.25 4H0.25V14H10.25V4Z" fill="#F5987E"/>
                     </svg>
 
-                    <span className='text-ground text-xs md:text-md'>Write article</span>
+                    <span className='text-ground'>Write article</span>
                   </div>
                 </div>
               </div>
