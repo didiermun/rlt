@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 export default function Header(){
+    const [active, setActive] = useState(1)
     return(
         <div className="w-full bg-white overflow-hidden">
             <div className='flex flex-wrap lg:flex-nowrap justify-between gap-6 px-6'>
@@ -20,54 +21,54 @@ export default function Header(){
                 </div>
                 <div className='flex flex-wrap md:flex-nowrap gap-6 pr-14'>
                     <div className='flex gap-2 md:gap-4 ld:gap-6 lg:border-r border-darkgray py-1 px-2 md:px-4 lg:px-6'>
-                        <div className='flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer border-b-4'>
+                        <div onClick={()=>{setActive(1)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 1 && 'border-b-4'}`}>
                             <svg width="25" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 9V11H21V18C21 19.7 19.7 21 18 21H14V15H10V21H6C4.3 21 3 19.7 3 18V11H1V9L12 2L23 9Z" fill="black" fill-opacity="0.9"/>
                                 <path d="M20 2H17V5.2L20 7.1V2Z" fill="black" fill-opacity="0.9"/>
                             </svg>
-                            <span className='text-xs sm:text-sm'>Home</span>
+                            <span className={`text-xs sm:text-sm ${active == 1 ? 'text-black' : 'text-dimgray'}`}>Home</span>
                         </div>
-                        <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div onClick={()=>{setActive(2)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 2 && 'border-b-4'}`}>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12.5 16V22H3.5V16C3.5 14.3 4.8 13 6.5 13H9.5C11.2 13 12.5 14.3 12.5 16ZM18 13C19.9 13 21.5 11.4 21.5 9.5C21.5 7.6 19.9 6 18 6C16.1 6 14.5 7.6 14.5 9.5C14.5 11.4 16.1 13 18 13ZM19 15H17C15.6 15 14.5 16.1 14.5 17.5V22H21.5V17.5C21.5 16.1 20.4 15 19 15ZM8 2C5.5 2 3.5 4 3.5 6.5C3.5 9 5.5 11 8 11C10.5 11 12.5 9 12.5 6.5C12.5 4 10.5 2 8 2Z" fill="#666666" fill-opacity="0.6"/>
+                                <path d="M12.5 16V22H3.5V16C3.5 14.3 4.8 13 6.5 13H9.5C11.2 13 12.5 14.3 12.5 16ZM18 13C19.9 13 21.5 11.4 21.5 9.5C21.5 7.6 19.9 6 18 6C16.1 6 14.5 7.6 14.5 9.5C14.5 11.4 16.1 13 18 13ZM19 15H17C15.6 15 14.5 16.1 14.5 17.5V22H21.5V17.5C21.5 16.1 20.4 15 19 15ZM8 2C5.5 2 3.5 4 3.5 6.5C3.5 9 5.5 11 8 11C10.5 11 12.5 9 12.5 6.5C12.5 4 10.5 2 8 2Z" fill={`${active == 2 ? 'black' : '#666666'}`} fill-opacity={`${active == 2 ? '1' : '0.6'}`}/>
                             </svg>
 
-                            <span className='text-xs sm:text-sm'>My Network</span>
+                            <span className={`text-xs sm:text-sm ${active == 2 ? 'text-black' : 'text-dimgray'}`}>My Network</span>
                         </div>
 
-                        <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div onClick={()=>{setActive(3)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 3 && 'border-b-4'}`}>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.5 6V5C17.5 3.3 16.2 2 14.5 2H10.5C8.8 2 7.5 3.3 7.5 5V6H2.5V10C2.5 11.7 3.8 13 5.5 13H19.5C21.2 13 22.5 11.7 22.5 10V6H17.5ZM9.5 5C9.5 4.4 9.9 4 10.5 4H14.5C15.1 4 15.5 4.4 15.5 5V6H9.5V5ZM19.5 14C20.7 14 21.8 13.5 22.5 12.6V17C22.5 18.7 21.2 20 19.5 20H5.5C3.8 20 2.5 18.7 2.5 17V12.6C3.2 13.5 4.3 14 5.5 14H19.5Z" fill="#666666" fill-opacity="0.6"/>
+                                <path d="M17.5 6V5C17.5 3.3 16.2 2 14.5 2H10.5C8.8 2 7.5 3.3 7.5 5V6H2.5V10C2.5 11.7 3.8 13 5.5 13H19.5C21.2 13 22.5 11.7 22.5 10V6H17.5ZM9.5 5C9.5 4.4 9.9 4 10.5 4H14.5C15.1 4 15.5 4.4 15.5 5V6H9.5V5ZM19.5 14C20.7 14 21.8 13.5 22.5 12.6V17C22.5 18.7 21.2 20 19.5 20H5.5C3.8 20 2.5 18.7 2.5 17V12.6C3.2 13.5 4.3 14 5.5 14H19.5Z" fill={`${active == 3 ? 'black' : '#666666'}`} fill-opacity={`${active == 3 ? '1' : '0.6'}`}/>
                             </svg>
 
 
-                            <span className='text-xs sm:text-sm'>Jobs</span>
+                            <span className={`text-xs sm:text-sm ${active == 3 ? 'text-black' : 'text-dimgray'}`}>Jobs</span>
                         </div>
 
-                        <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div onClick={()=>{setActive(4)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 4 && 'border-b-4'}`}>
                             <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.5 3H8.5C6.64348 3 4.86301 3.77847 3.55025 5.16416C2.2375 6.54984 1.5 8.42923 1.5 10.3889C1.5 12.3485 2.2375 14.2279 3.55025 15.6136C4.86301 16.9993 6.64348 17.7778 8.5 17.7778H12.5V22L20.66 16.3106C21.5512 15.639 22.2751 14.7495 22.7697 13.7183C23.2643 12.687 23.5148 11.5446 23.5 10.3889C23.5 8.42923 22.7625 6.54984 21.4497 5.16416C20.137 3.77847 18.3565 3 16.5 3ZM8.5 11.7083C8.25277 11.7083 8.0111 11.631 7.80554 11.486C7.59998 11.341 7.43976 11.1349 7.34515 10.8938C7.25054 10.6527 7.22579 10.3874 7.27402 10.1315C7.32225 9.87553 7.4413 9.64043 7.61612 9.4559C7.79093 9.27137 8.01366 9.14571 8.25614 9.0948C8.49861 9.04389 8.74995 9.07002 8.97835 9.16988C9.20676 9.26975 9.40199 9.43886 9.53934 9.65585C9.67669 9.87283 9.75 10.1279 9.75 10.3889C9.75 10.7388 9.6183 11.0744 9.38388 11.3219C9.14946 11.5693 8.83152 11.7083 8.5 11.7083ZM12.5 11.7083C12.2528 11.7083 12.0111 11.631 11.8055 11.486C11.6 11.341 11.4398 11.1349 11.3452 10.8938C11.2505 10.6527 11.2258 10.3874 11.274 10.1315C11.3222 9.87553 11.4413 9.64043 11.6161 9.4559C11.7909 9.27137 12.0137 9.14571 12.2561 9.0948C12.4986 9.04389 12.7499 9.07002 12.9784 9.16988C13.2068 9.26975 13.402 9.43886 13.5393 9.65585C13.6767 9.87283 13.75 10.1279 13.75 10.3889C13.75 10.7388 13.6183 11.0744 13.3839 11.3219C13.1495 11.5693 12.8315 11.7083 12.5 11.7083ZM16.5 11.7083C16.2528 11.7083 16.0111 11.631 15.8055 11.486C15.6 11.341 15.4398 11.1349 15.3452 10.8938C15.2505 10.6527 15.2258 10.3874 15.274 10.1315C15.3222 9.87553 15.4413 9.64043 15.6161 9.4559C15.7909 9.27137 16.0137 9.14571 16.2561 9.0948C16.4986 9.04389 16.7499 9.07002 16.9784 9.16988C17.2068 9.26975 17.402 9.43886 17.5393 9.65585C17.6767 9.87283 17.75 10.1279 17.75 10.3889C17.75 10.7388 17.6183 11.0744 17.3839 11.3219C17.1495 11.5693 16.8315 11.7083 16.5 11.7083Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>
 
 
-                            <span className='text-xs sm:text-sm'>Messages</span>
+                            <span className={`text-xs sm:text-sm ${active == 4 ? 'text-black' : 'text-dimgray'}`}>Messages</span>
                         </div>
 
-                        <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div onClick={()=>{setActive(5)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 5 && 'border-b-4'}`}>
                             <svg width="25" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M13.7 19C13.9 19.3 14 19.6 14 20C14 21.1 13.1 22 12 22C10.9 22 10 21.1 10 20C10 19.6 10.1 19.3 10.3 19H2V18C2 17 2.4 16.1 3.2 15.2L4.2 14H19.9L20.9 15.2C21.7 16.2 22.1 17.1 22.1 18V19H13.7ZM18.2 7.4C17.8 4.3 15.1 2 12 2C8.9 2 6.2 4.3 5.8 7.4L5 13H19L18.2 7.4Z" fill="#666666" fill-opacity="0.6"/>
                             </svg>
 
 
 
-                            <span className='text-xs sm:text-sm'>Notifications</span>
+                            <span className={`text-xs sm:text-sm ${active == 5 ? 'text-black' : 'text-dimgray'}`}>Notifications</span>
                         </div>
 
-                        <div className='flex flex-col w-max items-center px-2 border-black text-ground  pb-1 cursor-pointer'>
+                        <div onClick={()=>{setActive(6)}} className={`flex flex-col w-max items-center px-2 border-black  pb-1 cursor-pointer ${active == 6 && 'border-b-4'}`}>
                             <img src="https://th.bing.com/th/id/R.215ba40fb9ecbec4b30827894ba78cd0?rik=E9WUGcSGxVdxXQ&riu=http%3a%2f%2fwww.6dglobal.com%2fimages%2fstaff%2fbrad.barton.jpg&ehk=2Cew2qqeMYL%2fkblfAk1dA7YhWHvLTubNbKN6MmF%2foas%3d&risl=&pid=ImgRaw&r=0" alt="Profile" className='h-6 w-6 rounded-full' />
 
                             <div className='flex w-max justify-center'>
-                                <span className='text-xs sm:text-sm'>Me</span>
+                                <span className={`text-xs sm:text-sm ${active == 6 ? 'text-black' : 'text-dimgray'}`}>Me</span>
                                 <svg width="20" height="20" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M9.29999 10.66L14.5 5.12002C14.5136 5.10966 14.5229 5.09471 14.5262 5.07797C14.5295 5.06123 14.5266 5.04385 14.518 5.02911C14.5094 5.01437 14.4957 5.00328 14.4795 4.99792C14.4633 4.99257 14.4457 4.99331 14.43 5.00002H2.56999C2.5543 4.99331 2.5367 4.99257 2.5205 4.99792C2.50429 5.00328 2.49061 5.01437 2.48201 5.02911C2.47341 5.04385 2.47049 5.06123 2.4738 5.07797C2.47712 5.09471 2.48643 5.10966 2.49999 5.12002L7.69999 10.66C7.80282 10.769 7.92681 10.8558 8.06438 10.9151C8.20194 10.9744 8.35018 11.005 8.49999 11.005C8.64981 11.005 8.79804 10.9744 8.93561 10.9151C9.07317 10.8558 9.19717 10.769 9.29999 10.66Z" fill="#666666" fill-opacity="0.6"/>
                                 </svg>

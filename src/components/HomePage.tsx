@@ -3,12 +3,6 @@ import PostCard from './PostCard'
 import NewPost from './NewPost'
 
 export default function LocationForm() {
-    const [data, setData] = useState<any>({
-        origin: '',
-        destination: '',
-        depart: new Date(),
-        return: new Date(),
-    })
 
     return(
           <div className="container px-6 py-12 h-full">
