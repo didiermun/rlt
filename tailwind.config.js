@@ -42,6 +42,7 @@ module.exports = {
         ground: '#666666',
         brown: "#915907",
         dimgray: "#666666",
+        lblue: "#0A66C2",
         darkgray: "#E0E0E0",
         gray$: {
           default: '#ddd',
