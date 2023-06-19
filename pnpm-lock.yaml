@@ -18,7 +18,7 @@ specifiers:
   typescript: 4.4.3
   vite: 2.5.6
   vite-plugin-checker: 0.3.4
-  vite-tsconfig-paths: 3.3.14
+  vite-tsconfig-paths: 3.6.0
 
 dependencies:
   react: 17.0.2
@@ -40,7 +40,7 @@ devDependencies:
   typescript: 4.4.3
   vite: 2.5.6
   vite-plugin-checker: 0.3.4_vite@2.5.6
-  vite-tsconfig-paths: 3.3.14_vite@2.5.6
+  vite-tsconfig-paths: 3.6.0_vite@2.5.6
 
 packages:
 
@@ -3258,8 +3258,8 @@ packages:
       is-number: 7.0.0
     dev: true
 
-  /tsconfig-paths/3.11.0:
-    resolution: {integrity: sha512-7ecdYDnIdmv639mmDwslG6KQg1Z9STTz1j7Gcz0xa+nshh/gKDAHcPxRbWOsA3SPp0tXP2leTcY9Kw+NAkfZzA==}
+  /tsconfig-paths/3.14.1:
+    resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
     dependencies:
       '@types/json5': 0.0.29
       json5: 1.0.1
@@ -3267,11 +3267,11 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsconfig-paths/3.14.1:
-    resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
+  /tsconfig-paths/4.2.0:
+    resolution: {integrity: sha512-NoZ4roiN7LnbKn9QqE1amc9DJfzvZXxF4xDavcOWt1BPkdx+m+0gJuPM+S0vCe7zTJMYUP0R8pO2XMr+Y8oLIg==}
+    engines: {node: '>=6'}
     dependencies:
-      '@types/json5': 0.0.29
-      json5: 1.0.1
+      json5: 2.2.3
       minimist: 1.2.7
       strip-bom: 3.0.0
     dev: true
@@ -3376,15 +3376,15 @@ packages:
       vscode-uri: 3.0.2
     dev: true
 
-  /vite-tsconfig-paths/3.3.14_vite@2.5.6:
-    resolution: {integrity: sha512-Z501YCOTTwBk+zDq0furrD+O+X/zawKIo8L3eE0GVSr700AvWAArnlUHOzoRJQw0fJLfd+61rD7jkT20Jh8gtA==}
+  /vite-tsconfig-paths/3.6.0_vite@2.5.6:
+    resolution: {integrity: sha512-UfsPYonxLqPD633X8cWcPFVuYzx/CMNHAjZTasYwX69sXpa4gNmQkR0XCjj82h7zhLGdTWagMjC1qfb9S+zv0A==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.4
       globrex: 0.1.2
       recrawl-sync: 2.2.1
-      tsconfig-paths: 3.11.0
+      tsconfig-paths: 4.2.0
       vite: 2.5.6
     transitivePeerDependencies:
       - supports-color
